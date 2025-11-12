@@ -1,4 +1,4 @@
-Project-CP-NPCmaker-C-
+Stardew NPC Maker Project
 ======================
 
 This project is a complete rewrite of the original Stardew Valley NPC Maker, rebuilt from the ground up using C# and .NET 8.
