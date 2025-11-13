@@ -1,52 +1,61 @@
-# Stardew NPC Maker Project
+<p align="center">
+  <img src="https://tamkungz.github.io/image/avalonia-logo.webp" width="150" height="150" alt="Logo-Icon">
+</p>
 
-This project is a complete rewrite of the original Stardew Valley NPC Maker, rebuilt from the ground up using C\# and .NET 8.
+<h1 align="center">Stardew NPC Maker</h1>
 
-The primary goal is to create a modern, cross-platform desktop application using Avalonia UI. This allows for development on a Linux environment while being able to compile and publish self-contained executables for Windows, macOS, and Linux.
+<p align="center">The easiest way to create custom NPCs for Stardew Valley. No coding required.</p>
 
-The application provides a comprehensive, multi-page wizard interface (GUI) to input all necessary NPC data, select image files, and generate a complete, ready-to-use Content Patcher mod folder.
+<p align="center">
+  <img src="https://tamkungz.github.io/image/app-preview.png" width="750" height="300" alt="app-preview">
+</p>
 
-<img width="1271" height="748" alt="Screenshot-from-2025-11-12 19-36-40" src="https://github.com/user-attachments/assets/28d31491-28ff-4f99-9937-67715d8d96e3" />
+## What is this?
 
+This is a simple desktop application that helps you create your own custom NPCs for Stardew Valley. It provides a step-by-step wizard to enter all your character's information, dialogue, and schedules.
+
+When you're finished, the app automatically generates a **complete Content Patcher mod folder**, ready to be dropped into your game's `Mods` directory.
+
+## Get Started (For Users)
+
+1.  Go to the [**Releases Page**](https://www.google.com/search?q=httpsa://github.com/TamKungZ/NPCmaker-CS/releases) (Note: You'll need to create this page if it doesn't exist).
+2.  Download the `.zip` file for your operating system (Windows, macOS, or Linux).
+3.  Unzip the file and run the application.
+4.  Follow the on-screen wizard to build your NPC\!
 
 ## Features
 
-  * **Cross-Platform GUI:** Built with Avalonia UI, allowing the application to run on Windows, macOS, and Linux.
-  * **Multi-Page Wizard Interface:** A step-by-step wizard that guides you through:
-    1.  Basic Info (Name, Author)
-    2.  Images (Portraits & Sprites)
-    3.  Dialogue & Schedules
-    4.  Detailed Disposition
-    5.  Custom Events
-  * **Image Selection with Previews:** Select portrait and sprite files from your computer and see a live preview directly in the application.
-  * **Advanced Data Editors:**
-      * **Detailed Disposition Editor:** A dedicated page to visually configure all 15 fields of `NPCDispositions` (Age, Manner, Gender, Gifts, etc.) using dropdowns and text boxes.
-      * **Custom Dialogue Editor:** A list editor to add any number of custom dialogue keys (e.g., `Mon`, `AcceptGift_Loved`, `Introduction`) and their corresponding text.
-      * **Custom Schedule Editor:** A UI-assisted editor to build complex schedule lines, including season, time, location, X/Y coordinates, and direction.
-      * **Custom Event Editor:** A simple editor to add custom event keys and their full event script strings.
-  * **Smart File Handling:**
-      * Copies and renames your `_Portraits.png` and `_Sprite.png` files to match the NPC's Internal ID.
-  * **Full Mod Generation:** Generates the complete directory structure (`manifest.json`, `content.json`, and `assets` folder) based on all the custom data you entered.
+  * **Works Everywhere:** A single application that runs on Windows, macOS, and Linux.
+  * **Step-by-Step Wizard:** A simple guide walks you through every part of creating an NPC (Basic info, images, dialogue, schedules, and more).
+  * **Visual Editors:** Easily add dialogue, create complex schedules, and set character gifts with simple forms—no need to edit confusing text files.
+  * **Image Previews:** See your character's portraits and sprites live in the app as you add them.
+  * **One-Click Mod Generation:** Automatically creates the complete mod folder, including the `manifest.json`, `content.json`, and all your `assets`, properly named and organized.
 
-## Technology Stack
+-----
+
+## For Developers (Building from Source)
+
+This section is for developers who want to contribute to the project or build it from the source code.
+
+### Technology Stack
 
   * **Language:** C\#
   * **Framework:** .NET 8
   * **UI:** Avalonia UI (with FluentTheme)
   * **JSON Handling:** System.Text.Json
 
-## How to Build and Run
+### How to Build and Run
 
 You must have the **.NET 8 SDK** installed on your system.
 
-### 1\. Clone the Repository
+#### 1\. Clone the Repository
 
 ```bash
 git clone https://github.com/TamKungZ/NPCmaker-CS.git
 cd NPCmaker-CS
 ```
 
-### 2\. Run Locally (for Development)
+#### 2\. Run Locally (for Development)
 
 Navigate to the project directory (e.g., `NPCMaker`) and run:
 
@@ -54,9 +63,9 @@ Navigate to the project directory (e.g., `NPCMaker`) and run:
 dotnet run
 ```
 
-This will compile and launch the application on your current operating system (e.g., Linux).
+This will compile and launch the application on your current operating system.
 
-### 3\. Publish (Export Executables)
+#### 3\. Publish (Export Executables)
 
 You can compile self-contained applications for all major platforms from your development machine.
 
