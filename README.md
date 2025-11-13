@@ -27,7 +27,7 @@ When you're finished, the app automatically generates a **complete Content Patch
 
 ## Get Started (For Users)
 
-1.  Go to the [**Releases Page**](https://www.google.com/search?q=httpsa://github.com/TamKungZ/NPCmaker-CS/releases) (Note: You'll need to create this page if it doesn't exist).
+1.  Go to the [**Releases Page**](https://github.com/TamKungZ/Stardew-NPC-Maker-CS/releases) (Note: You'll need to create this page if it doesn't exist).
 2.  Download the `.zip` file for your operating system (Windows, macOS, or Linux).
 3.  Unzip the file and run the application.
 4.  Follow the on-screen wizard to build your NPC\!
