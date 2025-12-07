@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://tamkungz.github.io/image/avalonia-logo.webp" width="150" height="150" alt="Logo-Icon">
+  <img src="https://tamkungz.github.io/image/StardewNPCMaker-logo.webp" width="150" height="150" alt="Logo-Icon">
 </p>
 
 <p align="center">
